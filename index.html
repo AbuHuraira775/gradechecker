@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="heading">
+            <h1>Academic Progress Chaecker</h1>
+        </div>
+
+        <div id="subjects">
+            <p>How many courses you have?</p>
+            <input type="number" id="subject" placeholder="Maximum 6 courses " min="0" max="6">
+            <button id="confrm">Confirm</button>
+        </div>
+
+        <div id="data">
+
+            <div class="sub sub1">
+                <h1>Course-01 </h1>
+                <input type="text" placeholder="Course code" class="inputcoursecode">
+                <input type="text" placeholder="Course name" class="inputcoursename">
+                <input type="number" placeholder="insert marks till 100" id="sub_1"  min="0" max="100">           
+            </div>
+            
+            <div class="sub sub2">
+                <h1>Course-02 </h1>
+                <input type="text" placeholder="Course code" class="inputcoursecode">
+                <input type="text" placeholder="Course name" class="inputcoursename">
+                <input type="number" placeholder="insert marks till 100" id="sub_2" min="0" max="100">
+            </div>
+            
+            <div class="sub sub3">
+                <h1>Course-03 </h1>
+                <input type="text" placeholder="Course code" class="inputcoursecode">
+                <input type="text" placeholder="Course name" class="inputcoursename">
+                <input type="number"placeholder="insert marks till 100" id="sub_3" min="0" max="100">
+            </div>
+            
+            <div class="sub sub4">
+                <h1>Course-04 </h1>
+                <input type="text" placeholder="Course code" class="inputcoursecode">
+                <input type="text" placeholder="Course name" class="inputcoursename">
+                <input type="number" placeholder="insert marks till 100" id="sub_4" min="0" max="100">
+            </div>
+            
+            <div class="sub sub5">
+                <h1>Course-05 </h1>
+                <input type="text" placeholder="Course code" class="inputcoursecode">
+                <input type="text" placeholder="Course name" class="inputcoursename">
+                <input type="number" placeholder="insert marks till 100" id="sub_5" min="0" max="100">
+            </div>
+            
+            <div class="sub sub6">
+                <h1>Course-06 </h1>
+                <input type="text" placeholder="Course code" class="inputcoursecode">
+                <input type="text" placeholder="Course name" class="inputcoursename">
+                <input type="number" placeholder="insert marks till 100" id="sub_6" min="0" max="100">
+            </div>
+
+            <div class="btn">
+                <button id="btn">Check Marksheet</button>
+            </div>
+
+        </div>
+
+
+        <div id="result">
+            <table class="table" id="table">
+                <tr id="rowhead" >
+                    <th class="th">Course Code</th>
+                    <th class="th">Course Name</th>
+                    <th class="th">Obtained Marks</th>
+                    <th class="th">Total Marks</th>
+                    <th class="th">Percentage</th>
+                    <th class="th">Grade</th>
+                    <th class="th">Points</th>
+                </tr>
+                
+                <tr class="row1 rows">
+                    <td class="coursecode td">--</td>
+                    <td class="coursename td">--</td>
+                    <td class="obt_marks td">00</td>
+                    <td class="net_marks net_marks1 td">00</td>
+                    <td class="sub_per sub_per1 td">0%</td>
+                    <td class="gpa gpa1 td">-</td>
+                    <td class="point point1 td">0</td>
+                </tr>
+
+                <tr class="row2 rows">
+                    <td class="coursecode td">--</td>
+                    <td class="coursename td">--</td>
+                    <td class="obt_marks td">00</td>
+                    <td class="net_marks net_marks2 td">00</td>
+                    <td class="sub_per sub_per2 td">0%</td>
+                    <td class="gpa gpa2 td">-</td>
+                    <td class="point point1 td">0</td>
+                </tr>
+
+                <tr class="row3 rows">
+                    <td class="coursecode td">--</td>
+                    <td class="coursename td">--</td>
+                    <td class="obt_marks td">00</td>
+                    <td class="net_marks net_marks3 td">00</td>
+                    <td class="sub_per sub_per3 td">0%</td>
+                    <td class="gpa gpa3 td">-</td>
+                    <td class="point point1 td">0</td>
+                </tr>
+
+                <tr class="row4 rows">
+                    <td class="coursecode td">--</td>
+                    <td class="coursename td">--</td>
+                    <td class="obt_marks td">00</td>
+                    <td class="net_marks net_marks4 td">00</td>
+                    <td class="sub_per sub_per4 td">0%</td>
+                    <td class="gpa gpa4 td">-</td>
+                    <td class="point point1 td">0</td>
+                </tr>
+
+                <tr class="row5 rows">
+                    <td class="coursecode td">--</td>
+                    <td class="coursename td">--</td>
+                    <td class="obt_marks td">00</td>
+                    <td class="net_marks net_marks5 td">00</td>
+                    <td class="sub_per sub_per5 td">0%</td>
+                    <td class="gpa gpa5 td">-</td>
+                    <td class="point point1 td">0</td>
+                </tr>
+
+                <tr class="row6 rows">
+                    <td class="coursecode td">--</td>
+                    <td class="coursename td">--</td>
+                    <td class="obt_marks td">00</td>
+                    <td class="net_marks net_marks6 td">00</td>
+                    <td class="sub_per sub_per6 td">0%</td>
+                    <td class="gpa gpa6 td">-</td>
+                    <td class="point point1 td">0</td>
+                </tr>
+
+
+                <tr id="rowtotal" >
+                    <th colspan="2" class="th">Total</th>
+                    <th id="totalObtained_marks" class="th">00</th>
+                    <th id="total_marks" class="th">00</th>
+                    <th id="percentage_" class="th">0%</th>
+                    <th class="th">Total GPA</th>
+                    <th id="total_gpa" class="th">0</th>
+                </tr>
+
+            </table>
+            
+            <div class="gradbtns" id="result_btns">
+                <button id="grade">View Grade System</button>
+            </div>
+
+        </div>
+
+        <div id="grad_sys">
+            <div class="grad_table">
+                <table>
+                    <tr>
+                        <th>Percantages</th>
+                        <th>Grades</th>
+                        <th>Points</th>
+                    </tr>
+
+                    <tr>
+                        <td>90% and above</td>
+                        <td>A+</td>
+                        <td>4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>80% - 90%</td>
+                        <td>A+</td>
+                        <td>3.66</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>75% - 79%</td>
+                        <td>A</td>
+                        <td>3.33</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>71% - 74%</td>
+                        <td>A</td>
+                        <td>3.00</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>68% - 70%</td>
+                        <td>B or A</td>
+                        <td>2.66</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>64% - 67%</td>
+                        <td>B</td>
+                        <td>2.33</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>61% - 63%</td>
+                        <td>B</td>
+                        <td>2.00</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>58% - 60%</td>
+                        <td>C or B</td>
+                        <td>1.66</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>54% - 57%</td>
+                        <td>C</td>
+                        <td>1.33</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>50% - 53%</td>
+                        <td>C</td>
+                        <td>1.00</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Below 50%</td>
+                        <td>D</td>
+                        <td>0.00</td>
+                    </tr>
+                    
+                    
+                </table>
+            </div>
+
+            <!-- <div class="gradbtns" id="grade_sys_btns">
+                <button>Back to Course Selection</button>
+                <button>View Marksheet</button>
+                <button>Download Marksheet</button>
+            </div> -->
+        </div>
+
+       
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

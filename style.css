@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    transition: .2s ease all;
+    color: #fff;
+}
+body{
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    background: #4B0082;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+.heading{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.heading h1{
+    text-align: center;
+    font-size: 3.5vw;
+}
+#subjects p{
+    text-align: center;
+    font-size: 2vw;
+}
+#subjects input::placeholder{
+    font-size: 1.6vw;
+    color: rgb(131, 129, 129);
+}
+#subjects{
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+}
+#subjects input, 
+#subjects button,
+#data input,
+#btn,
+.gradbtns button{
+    width: 30%;
+    margin: auto;
+    height: 4vw;
+    margin-top: 1vw;
+    color: #333;
+    font-size: 1.6vw;
+    border: none;
+    outline: none;
+    border-radius: .2vw;
+    padding-left: 1vw;
+}
+#subjects button,#btn{
+    cursor: pointer;
+    margin-top: 2.5vw;
+    margin-bottom: 5vw;
+    font-weight: bold;
+}
+#subjects button:hover,
+#btn:hover
+{
+    /* transform: translateY(-1px); */
+    cursor: pointer;
+    color: #fff;
+    background-image: linear-gradient(35deg,#a10bfff5, #542366);
+}
+.sub{
+    display: none;
+    margin: 4vw 0;
+}
+
+#data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+}
+.sub h1{
+    text-align: left;
+}
+#btn{
+    display: none;
+    width: 80%;
+    margin-top: 5vw;
+    height: 5vw;
+
+}
+
+
+
+table, td, th{
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 14.3%;
+    height: 5vw;
+}
+#result,.grad_table table{
+    width: 100%;
+}
+#result .gradbtns{
+    display: none;
+}
+#grad_sys{
+    display: none;
+}
+.grad_table th{
+    border: 2px solid #4B0082;
+    margin-bottom: 10vw;
+    /* background-color: #fff; */
+    color: #4B0082;
+}
+.grad_table table{
+    background-color: #fff;
+    margin-bottom: 10vw;
+}
+.grad_table td{
+    color: black;
+}
+.gradbtns{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
+}
+.gradbtns button{
+    border: 4px solid transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gradbtns button:hover{
+    border: 4px solid  #8A2BE2;
+    color: #8A2BE2;
+}
+#result table{
+    margin-bottom: 10vw;
+}
+
+.table{
+    width: 100%;
+    /* margin: auto; */
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    border: none;
+    display: none;
+}
+th{
+    font-size: 1.8vw;
+}
+.rows{
+    /* display: none; */
+    /* min-width: 100%; */
+    /* background-color: red; */
+    text-overflow: ellipsis;
+}
+.th{
+    min-width: 14.3%;
+    height: 5vw;
+    /* background-color: green; */
+}
+.width{
+    min-width: 31%; 
+    max-width: 41%;;
+    text-overflow: none;
+    /* height: 8vw; */
+    /* padding: 0 2vw; */
+    
+}
